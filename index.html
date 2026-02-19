@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Aga Zamirska – basistka | Bass Player</title>
   <meta name="description" content="Aga Zamirska (Agata Zamirska) – basistka, groove, pop/rock, jazz, funk. Oficjalna strona.">
   <meta name="keywords" content="Aga Zamirska, Agata Zamirska, basistka, bass player, groove, pop, rock, jazz, funk">
 
   <!-- Google Analytics GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JRXH47R3Y"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-8JRXH47R3Y');
+    gtag('config', 'G-8JRXH47R3Y'); 
+    // 👆 WSTAW SWOJE ID np. G-ABCD123456
   </script>
 
   <style>
@@ -28,29 +30,16 @@
       text-align:center;
       flex-direction:column;
       padding:1rem;
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-    }
 
-    .hero-img {
-      width:80%;
-      max-width:400px;
-      opacity:0.6;
-      border-radius:10px;
-      margin-bottom:1rem;
-      display:block;
-      margin-left:auto;
-      margin-right:auto;
+      /* Zdjęcie + półprzezroczysta warstwa */
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                  url('aga.jpg') center/cover no-repeat;
     }
 
     h1 {
       font-size:2.5rem;
       margin-bottom:0.5rem;
       letter-spacing:1px;
-    }
-
-    h2 {
-      font-size:1.5rem;
-      margin-bottom:1rem;
     }
 
     p {
@@ -89,16 +78,11 @@
 
     @media(max-width:768px){
       h1 { font-size:2rem; }
-      h2 { font-size:1.2rem; }
       p { font-size:1rem; }
-      .hero-img { max-width:300px; }
     }
   </style>
 </head>
 <body>
-
-  <!-- Zdjęcie -->
-  <img src="www/aga.jpg" alt="Aga Zamirska – basistka" class="hero-img">
 
   <h1>Aga Zamirska (Agata Zamirska)</h1>
   <h2>Basistka | Bass Player</h2>

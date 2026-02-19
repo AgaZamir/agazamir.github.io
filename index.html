@@ -73,20 +73,24 @@ a:hover { color:#ffa366; }
   h2 { font-size:1.2rem; }
   p { font-size:1rem; }
 }
-  h1 { font-size:2.8rem; }
+h1 { 
+  font-size: 2.8rem; 
+  font-family: 'Playfair Display', serif !important;
+  margin:0.5rem 0;
+}
 
 .small-name {
-  font-size: 50%;
-  display: inline-block;
-  font-weight: normal;
-  margin-left: 0.3rem;
+  font-size: 1.4rem;      /* dwukrotnie mniejsze niż h1 */
+  display: block;          /* nowa linia, żeby było widoczne */
+  font-weight: normal;     /* mniej pogrubione */
+  line-height: 1.2;        /* dopasowanie odstępu między wierszami */
 }
 </style>
 </head>
 <body>
 
 <h1>
-  Aga Zamirska <span class="small-name">(Agata Zamirska)</span>
+  Aga Zamirska <span class="small-name">(<br>Agata Zamirska)</span>
 </h1>
 <h2>Basistka | Bass Player</h2>
 

@@ -81,16 +81,18 @@ h1 {
 
 .small-name {
   font-size: 1.4rem;      /* dwukrotnie mniejsze niż h1 */
-  display: block;          /* nowa linia, żeby było widoczne */
+  display: block;          /* nowa linia – redundantne, ale bezpieczne */
   font-weight: normal;     /* mniej pogrubione */
   line-height: 1.2;        /* dopasowanie odstępu między wierszami */
+  margin-top: 0.1rem;      /* opcjonalny mały odstęp od góry */
 }
 </style>
 </head>
 <body>
 
 <h1>
-  Aga Zamirska <span class="small-name">(<br>Agata Zamirska)</span>
+  Aga Zamirska<br>
+  <span class="small-name">Agata Zamirska</span>
 </h1>
 <h2>Basistka | Bass Player</h2>
 

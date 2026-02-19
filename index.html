@@ -33,8 +33,126 @@
       padding:1rem;
 
       /* Zdjęcie + półprzezroczysta warstwa */
+      <!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8JRXH47R3Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8JRXH47R3Y');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aga Zamirska – basistka | Bass Player</title>
+  <meta name="description" content="Aga Zamirska (Agata Zamirska) – basistka, groove, pop/rock, jazz, funk. Oficjalna strona.">
+  <meta name="keywords" content="Aga Zamirska, Agata Zamirska, basistka, bass player, groove, pop, rock, jazz, funk">
+
+ 
+
+  <style>
+    body {
+      margin:0;
+      font-family:'Arial',sans-serif;
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      text-align:center;
+      flex-direction:column;
+      padding:1rem;
+
+      /* Zdjęcie + półprzezroczysta warstwa */
       background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
                   url('aga.jpg') center/cover no-repeat;
+    }
+
+    h1 {
+      font-size:2.5rem;
+      margin-bottom:0.5rem;
+      letter-spacing:1px;
+    }
+
+    p {
+      font-size:1.2rem;
+      margin-bottom:1.5rem;
+      line-height:1.5;
+    }
+
+    a {
+      color:#ff6600;
+      margin:0 0.7rem;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    a:hover {
+      color:#ffa366;
+    }
+
+    .lang-btns button {
+      background:none;
+      border:1px solid #fff;
+      color:#fff;
+      padding:0.4rem 1rem;
+      margin:0.3rem;
+      border-radius:20px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .lang-btns button:hover {
+      background:#ff6600;
+      border-color:#ff6600;
+    }
+
+    @media(max-width:768px){
+      h1 { font-size:2rem; }
+      p { font-size:1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Aga Zamirska (Agata Zamirska)</h1>
+  <h2>Basistka | Bass Player</h2>
+
+  <p id="text-pl">
+    Strona w budowie 🚧 <br>
+    W międzyczasie sprawdź moje social media:
+  </p>
+
+  <p id="text-en" style="display:none;">
+    Official website coming soon 🚧 <br>
+    In the meantime, check my social media:
+  </p>
+
+  <div class="lang-btns">
+    <button onclick="showLang('pl')">PL</button>
+    <button onclick="showLang('en')">EN</button>
+  </div>
+
+  <p>
+    <a href="https://instagram.com/aga.zamirska" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/channel/twoj-link" target="_blank">YouTube</a>
+    <a href="https://open.spotify.com/artist/twoj-link" target="_blank">Spotify</a>
+  </p>
+
+  <script>
+    function showLang(lang){
+      document.getElementById('text-pl').style.display = (lang==='pl') ? 'block' : 'none';
+      document.getElementById('text-en').style.display = (lang==='en') ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
     }
 
     h1 {

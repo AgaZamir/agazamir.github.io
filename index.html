@@ -16,11 +16,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Przezroczyste słowa</title>
 <style>
-  .invisible {
-    color: transparent; /* Tekst staje się niewidoczny */
+ .hidden-opacity {
+    opacity: 0;       /* tekst staje się niewidoczny */
+    pointer-events: none; /* nie reaguje na kliknięcia */
   }
 </style>
-<title>Aga Zamirska <span class="invisible">– basistka | Bass Player </span> </title>
+<title>Aga Zamirska <span class="hidden-opacity">– basistka | Bass Player </span> </title>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">

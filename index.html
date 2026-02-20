@@ -97,6 +97,31 @@ h1 {
   line-height: 1.2;        /* dopasowanie odstępu między wierszami */
   margin-top: 0.1rem;      /* opcjonalny mały odstęp od góry */
 }
+
+   .small-name {
+  font-size: 0.5rem;
+  display: block;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: 0.1rem;
+}
+
+/* --- SOCIAL ICONS --- */
+.social-icons {
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  font-size: 28px;
+  margin: 0 14px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+  transform: scale(1.15);
+}
 </style>
 </head>
 <body>
@@ -122,13 +147,19 @@ In the meantime, check my social media:
   <button onclick="showLang('en')">EN</button>
 </div>
 
-<p>
-<a href="https://instagram.com/aga.zamirska" target="_blank">
-  <i class="fab fa-instagram"></i>
-</a>
-<a href="https://www.youtube.com/channel/twoj-link" target="_blank">YouTube</a>
-<a href="https://open.spotify.com/artist/twoj-link" target="_blank">Spotify</a>
-</p>
+<div class="social-icons">
+  <a href="https://instagram.com/aga.zamirska" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.youtube.com/channel/twoj-link" target="_blank" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  <a href="https://open.spotify.com/artist/twoj-link" target="_blank" aria-label="Spotify">
+    <i class="fab fa-spotify"></i>
+  </a>
+</div>
 
 <script>
 function showLang(lang){

@@ -1,128 +1,165 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JRXH47R3Y"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8JRXH47R3Y"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8JRXH47R3Y');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-8JRXH47R3Y');
 </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aga Zamirska </title>
+<title>Aga Zamirska</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<!-- Elegant fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-/* body używa Montserrat, nagłówki Playfair Display */
-body {
+
+*{box-sizing:border-box}
+
+body{
   margin:0;
-  font-family:'Montserrat', sans-serif;
-  color:#fff;
+  font-family:'Inter', sans-serif;
   height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
+  color:white;
   text-align:center;
-  flex-direction:column;
-  padding:1rem;
 
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-              url('aga.jpg') center 30% / cover no-repeat;
-  background-attachment: fixed;
-  backdrop-filter: blur(2px);
+  background:
+  linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)),
+  url('aga.jpg') center/cover no-repeat fixed;
 }
 
-h1, h2 {
-  font-family: 'Playfair Display', serif !important;
-  margin:0.5rem 0;
+/* glass card */
+.card{
+  backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 50px 40px;
+  width: 90%;
+  max-width: 520px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.35);
+  animation: fade 1.2s ease;
 }
 
-h1 { font-size:2.8rem; }
-h2 { font-size:1.5rem; margin-bottom:1rem; }
+@keyframes fade{
+  from{opacity:0; transform:translateY(20px)}
+  to{opacity:1; transform:translateY(0)}
+}
 
-p {
+/* typography */
+h1{
+  font-family:'Playfair Display', serif;
+  font-size:3rem;
+  margin:0;
+  letter-spacing:1px;
+}
+
+.small-name{
+  display:block;
   font-size:1.2rem;
-  margin-bottom:1.5rem;
-  line-height:1.5;
+  font-weight:300;
+  opacity:0.8;
+  margin-top:6px;
 }
 
-a {
-  color:#ff6600;
-  margin:0 0.7rem;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
+.tagline{
+  margin-top:20px;
+  font-size:1.1rem;
+  opacity:0.9;
 }
 
-a:hover { color:#ffa366; }
+/* language buttons */
+.lang{
+  margin-top:25px;
+}
 
-.lang-btns button {
-  background:none;
-  border:1px solid #fff;
-  color:#fff;
-  padding:0.4rem 1rem;
-  margin:0.3rem;
+.lang button{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.5);
+  color:white;
+  padding:6px 16px;
   border-radius:20px;
+  margin:4px;
   cursor:pointer;
   transition:0.3s;
 }
 
-.lang-btns button:hover {
-  background:#ff6600;
-  border-color:#ff6600;
+.lang button:hover{
+  background:white;
+  color:black;
 }
 
+/* social buttons */
+.social{
+  margin-top:30px;
+}
+
+.social a{
+  display:inline-block;
+  margin:8px;
+  padding:10px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;
+  border:1px solid rgba(255,255,255,0.4);
+  transition:0.3s;
+  font-size:0.95rem;
+}
+
+.social a:hover{
+  background:white;
+  color:black;
+  transform:translateY(-2px);
+}
+
+/* mobile */
 @media(max-width:768px){
-  h1 { font-size:2rem; }
-  h2 { font-size:1.2rem; }
-  p { font-size:1rem; }
-}
-h1 { 
-  font-size: 2.8rem; 
-  font-family: 'Playfair Display', serif !important;
-  margin:0.5rem 0;
+  h1{font-size:2.3rem}
+  .card{padding:40px 25px}
 }
 
-.small-name {
-  font-size: 0.5rem;      /* dwukrotnie mniejsze niż h1 */
-  display: block;          /* nowa linia – redundantne, ale bezpieczne */
-  font-weight: normal;     /* mniej pogrubione */
-  line-height: 1.2;        /* dopasowanie odstępu między wierszami */
-  margin-top: 0.1rem;      /* opcjonalny mały odstęp od góry */
-}
 </style>
 </head>
+
 <body>
 
-<h1>
-  Aga Zamirska<br>
-  <span class="small-name">Agata Zamirska</span>
-</h1>
+<div class="card">
 
+  <h1>
+    Aga Zamirska
+    <span class="small-name">Agata Zamirska</span>
+  </h1>
 
-<p id="text-pl">
-Strona w budowie <br>
-W międzyczasie sprawdź moje social media:
-</p>
+  <p id="text-pl" class="tagline">
+    Oficjalna strona w przygotowaniu<br>
+    Obserwuj mnie tutaj:
+  </p>
 
-<p id="text-en" style="display:none;">
-Official website coming soon<br>
-In the meantime, check my social media:
-</p>
+  <p id="text-en" class="tagline" style="display:none;">
+    Official website coming soon<br>
+    Follow me here:
+  </p>
 
-<div class="lang-btns">
-  <button onclick="showLang('pl')">PL</button>
-  <button onclick="showLang('en')">EN</button>
+  <div class="lang">
+    <button onclick="showLang('pl')">PL</button>
+    <button onclick="showLang('en')">EN</button>
+  </div>
+
+  <div class="social">
+    <a href="https://instagram.com/aga.zamirska" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/channel/twoj-link" target="_blank">YouTube</a>
+    <a href="https://open.spotify.com/artist/twoj-link" target="_blank">Spotify</a>
+  </div>
+
 </div>
-
-<p>
-<a href="https://instagram.com/aga.zamirska" target="_blank">Instagram</a>
-<a href="https://www.youtube.com/channel/twoj-link" target="_blank">YouTube</a>
-<a href="https://open.spotify.com/artist/twoj-link" target="_blank">Spotify</a>
-</p>
 
 <script>
 function showLang(lang){

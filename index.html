@@ -15,71 +15,69 @@ gtag('config', 'G-8JRXH47R3Y');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aga Zamirska</title>
 
-<!-- Elegant fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{box-sizing:border-box}
 
 body{
   margin:0;
   font-family:'Inter', sans-serif;
-  height:100vh;
- display:flex;
-justify-content:center;
-align-items:flex-end;
-padding-bottom:8vh;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  padding-bottom:6vh;
   color:white;
   text-align:center;
 
-background:
-linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)),
-url('aga.jpg') center 5% / cover no-repeat fixed;
+  /* HERO IMAGE + CINEMATIC GRADIENT */
+  background:
+  linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 35%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.1) 100%),
+  url('aga.jpg') center 25% / cover no-repeat fixed;
+}
 
 /* glass card */
 .card{
-  backdrop-filter: blur(14px);
-  background: rgba(255,255,255,0.08);
-  border-radius: 24px;
-  padding: 50px 40px;
-  width: 90%;
-  max-width: 520px;
-  box-shadow: 0 0 40px rgba(0,0,0,0.35);
-  animation: fade 1.2s ease;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.35);
+  border-radius:20px;
+  padding:30px 28px;
+  width:88%;
+  max-width:420px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
+  animation:fade 1.2s ease;
 }
 
 @keyframes fade{
-  from{opacity:0; transform:translateY(20px)}
+  from{opacity:0; transform:translateY(25px)}
   to{opacity:1; transform:translateY(0)}
 }
 
 /* typography */
 h1{
   font-family:'Playfair Display', serif;
-  font-size:3rem;
+  font-size:2.4rem;
   margin:0;
   letter-spacing:1px;
 }
 
 .small-name{
   display:block;
-  font-size:1.2rem;
+  font-size:1rem;
   font-weight:300;
-  opacity:0.8;
+  opacity:0.85;
   margin-top:6px;
 }
 
 .tagline{
-  margin-top:20px;
-  font-size:1.1rem;
+  margin-top:18px;
+  font-size:1.05rem;
   opacity:0.9;
 }
 
 /* language buttons */
-.lang{
-  margin-top:25px;
-}
+.lang{ margin-top:20px; }
 
 .lang button{
   background:transparent;
@@ -98,20 +96,18 @@ h1{
 }
 
 /* social buttons */
-.social{
-  margin-top:30px;
-}
+.social{ margin-top:22px; }
 
 .social a{
   display:inline-block;
-  margin:8px;
-  padding:10px 20px;
+  margin:6px;
+  padding:9px 18px;
   border-radius:30px;
   text-decoration:none;
   color:white;
   border:1px solid rgba(255,255,255,0.4);
   transition:0.3s;
-  font-size:0.95rem;
+  font-size:0.9rem;
 }
 
 .social a:hover{
@@ -120,12 +116,9 @@ h1{
   transform:translateY(-2px);
 }
 
-/* mobile */
 @media(max-width:768px){
-  h1{font-size:2.3rem}
-  .card{padding:40px 25px}
+  h1{font-size:2rem}
 }
-
 </style>
 </head>
 

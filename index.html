@@ -15,14 +15,14 @@ gtag('config', 'G-8JRXH47R3Y');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aga Zamirska</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 *{box-sizing:border-box}
 
 body{
   margin:0;
-  font-family:'Inter', sans-serif;
+  font-family:'Manrope', sans-serif;
   min-height:100vh;
   display:flex;
   justify-content:center;
@@ -89,24 +89,31 @@ body::after{
 
 /* typography */
 h1{
-  font-family:'Playfair Display', serif;
-  font-size:2.4rem;
+  font-family:'Bodoni Moda', serif;
+  font-size:3.4rem;
   margin:0;
-  letter-spacing:1px;
+  letter-spacing:0.5px;
+  font-weight:700;
+  animation: heroFade 1.8s ease forwards;
 }
 
 .small-name{
   display:block;
-  font-size:1rem;
+  font-size:1.1rem;
   font-weight:300;
-  opacity:0.85;
-  margin-top:6px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  opacity:0.75;
+  margin-top:10px;
+  animation: heroFade 2.4s ease forwards;
 }
 
 .tagline{
-  margin-top:18px;
+  margin-top:22px;
   font-size:1.05rem;
-  opacity:0.9;
+  opacity:0.85;
+  letter-spacing:0.3px;
+}
 }
 
 /* language buttons */
@@ -151,6 +158,19 @@ h1{
 
 @media(max-width:768px){
   h1{font-size:2rem}
+}
+  /* fade in hero */
+@keyframes heroFade {
+  from{
+    opacity:0;
+    transform:translateY(25px);
+    letter-spacing:6px;
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+    letter-spacing:0.5px;
+  }
 }
 </style>
 </head>
